@@ -18,7 +18,7 @@ class PostTableViewCell: UITableViewCell {
   @IBOutlet weak var commentLabel: UILabel!
   @IBOutlet weak var commentButton: UIButton!
   
-  var comment_add:String = ""
+  //var comment_add:String = ""
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -64,14 +64,14 @@ class PostTableViewCell: UITableViewCell {
     }
     
     //初期化
-    comment_add = ""
-    commentLabel.text = ""
+    var comment_add:String = ""
     
     //コメント反映
     for comment in postData.commentAuthor {
-      comment_add += comment + "\n"
-      self.commentLabel.text = comment
+      comment_add += "\(comment)\n"
     }
+    self.commentLabel.text = comment_add
+    
   }
     
 }
