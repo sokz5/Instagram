@@ -26,13 +26,13 @@ class PostData: NSObject {
     
     self.caption = postDic["caption"] as? String
     
-    let timestamp = postDic["date"] as? Timestamp
-    self.date = timestamp?.dateValue()
-    
     //コメント
     if let commentAuthor = postDic["commentAuthor"] as? [String] {
       self.commentAuthor = commentAuthor
     }
+    
+    let timestamp = postDic["date"] as? Timestamp
+    self.date = timestamp?.dateValue()
     
     if let likes = postDic["likes"] as? [String] {
       self.likes = likes

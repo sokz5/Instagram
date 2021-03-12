@@ -129,55 +129,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BML-iq-RiA">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-nW-JvB">
                                 <rect key="frame" x="57" y="124" width="300" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="La6-wY-vO9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="CzH-U0-MLO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAj-qq-3lg">
-                                <rect key="frame" x="57" y="168" width="300" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="SbX-mV-VZB"/>
-                                </constraints>
-                                <state key="normal" title="コメント" backgroundImage="btn"/>
-                                <connections>
-                                    <action selector="checkComment:" destination="gRA-1j-Ofr" eventType="editingChanged" id="iSs-Sm-dZW"/>
-                                    <action selector="handleCommentButton:" destination="gRA-1j-Ofr" eventType="touchUpInside" id="7Ec-8Q-Mj2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUV-yk-Esu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pso-gc-2Rh">
                                 <rect key="frame" x="57" y="218" width="300" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8x0-vM-IVh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="xfA-qD-tkt"/>
                                 </constraints>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCancelButton:" destination="gRA-1j-Ofr" eventType="touchUpInside" id="JoL-5j-pnT"/>
+                                    <action selector="handleCancelButton:" destination="gRA-1j-Ofr" eventType="touchUpInside" id="ghm-hO-9Zt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-Cc-aSC">
+                                <rect key="frame" x="57" y="168" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XdG-Sc-E9t"/>
+                                </constraints>
+                                <state key="normal" title="コメント" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="checkComment:" destination="gRA-1j-Ofr" eventType="editingChanged" id="70c-fK-Nlm"/>
+                                    <action selector="handleCommentButton:" destination="gRA-1j-Ofr" eventType="touchUpInside" id="8rw-0F-AAB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HYI-nw-LXA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BML-iq-RiA" firstAttribute="top" secondItem="HYI-nw-LXA" secondAttribute="top" constant="80" id="1oR-VK-86S"/>
-                            <constraint firstItem="qAj-qq-3lg" firstAttribute="centerX" secondItem="nDf-qc-GTc" secondAttribute="centerX" id="Mko-fl-dYi"/>
-                            <constraint firstItem="gUV-yk-Esu" firstAttribute="centerX" secondItem="nDf-qc-GTc" secondAttribute="centerX" id="Zp9-1r-mfS"/>
-                            <constraint firstItem="BML-iq-RiA" firstAttribute="centerX" secondItem="nDf-qc-GTc" secondAttribute="centerX" id="ohA-1r-Ev5"/>
-                            <constraint firstItem="qAj-qq-3lg" firstAttribute="top" secondItem="BML-iq-RiA" secondAttribute="bottom" constant="10" id="wbX-91-5Ny"/>
-                            <constraint firstItem="gUV-yk-Esu" firstAttribute="top" secondItem="qAj-qq-3lg" secondAttribute="bottom" constant="10" id="zQu-JR-54A"/>
+                            <constraint firstItem="f3g-Cc-aSC" firstAttribute="top" secondItem="Uss-nW-JvB" secondAttribute="bottom" constant="10" id="4lh-KN-MJL"/>
+                            <constraint firstItem="Uss-nW-JvB" firstAttribute="top" secondItem="HYI-nw-LXA" secondAttribute="top" constant="80" id="C2D-41-WaJ"/>
+                            <constraint firstItem="pso-gc-2Rh" firstAttribute="top" secondItem="f3g-Cc-aSC" secondAttribute="bottom" constant="10" id="Tx8-dA-S9V"/>
+                            <constraint firstItem="Uss-nW-JvB" firstAttribute="centerX" secondItem="nDf-qc-GTc" secondAttribute="centerX" id="XPy-gI-kv3"/>
+                            <constraint firstItem="pso-gc-2Rh" firstAttribute="centerX" secondItem="nDf-qc-GTc" secondAttribute="centerX" id="Xfz-kn-mvp"/>
+                            <constraint firstItem="f3g-Cc-aSC" firstAttribute="centerX" secondItem="nDf-qc-GTc" secondAttribute="centerX" id="mnS-rd-muk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="commentField" destination="BML-iq-RiA" id="hAv-Qg-IXc"/>
-                        <outlet property="handleCommentButton" destination="qAj-qq-3lg" id="7S3-0y-hEm"/>
+                        <outlet property="commentField" destination="Uss-nW-JvB" id="1XV-69-rKu"/>
+                        <outlet property="handleCommentButton" destination="f3g-Cc-aSC" id="0AC-Ff-hPh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nX2-1l-hLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="1535"/>
+            <point key="canvasLocation" x="-746" y="1540"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="uoS-nr-4eB">

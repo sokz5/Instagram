@@ -24,12 +24,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     tableView.delegate = self
     tableView.dataSource = self
     
-    // セルの高さの見積もり値
-    tableView.estimatedRowHeight = 50
-      
-    // セルの制約を基に計算された高さを代入
-    tableView.rowHeight = UITableView.automaticDimension
-    
     //カスタムセルを登録
     let nib = UINib(nibName: "PostTableViewCell", bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: "Cell")
@@ -119,10 +113,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     let point = touch!.location(in: self.tableView)
     let indexPath = tableView.indexPathForRow(at: point)
     
+    //storyboardインスタンス取得
+    let storyboard: UIStoryboard = self.storyboard!
+    
     //CommentViewControllerに遷移する
-    let commentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
+    let commentViewController = storyboard.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
     commentViewController.postData = postArray[indexPath!.row]
     
-    present(commentViewController, animated: true, completion: nil)
+    self.present(commentViewController, animated: true, completion: nil)
   }
 }

@@ -9,8 +9,8 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class CommentViewController: UITabBarController, UITextFieldDelegate {
-
+class CommentViewController: UIViewController /*UITextFieldDelegate*/ {
+  
   @IBOutlet weak var commentField: UITextField!
   @IBOutlet weak var handleCommentButton: UIButton!
   
@@ -19,11 +19,12 @@ class CommentViewController: UITabBarController, UITextFieldDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //commentField.delegate = self
     commentField.text = ""
-    commentField.delegate = self
-    handleCommentButton.isEnabled = false
+    //handleCommentButton.isEnabled = false
   }
   
+  /*
   @IBAction func checkComment(_ sender: Any) {
     if commentField.text == "" {
       handleCommentButton.isEnabled = false
@@ -31,6 +32,7 @@ class CommentViewController: UITabBarController, UITextFieldDelegate {
       handleCommentButton.isEnabled = true
     }
   }
+ */
   
   @IBAction func handleCommentButton(_ sender: Any) {
     // HUDで処理中を表示

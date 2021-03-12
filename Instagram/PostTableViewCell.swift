@@ -64,6 +64,7 @@ class PostTableViewCell: UITableViewCell {
     }
     
     //初期化
+    comment_add = ""
     commentLabel.text = ""
     
     //コメント反映
